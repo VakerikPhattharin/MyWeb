@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เบเกอรี่ อศน. | หอมกรุ่นทุกเช้า อบใหม่ทุกวัน</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Kanit:wght@400;500;600&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 60 60" width="46" height="46">
+          <circle cx="30" cy="30" r="28" fill="var(--crust)"/>
+          <circle cx="30" cy="30" r="28" fill="none" stroke="var(--cocoa)" stroke-width="2" stroke-dasharray="3 4"/>
+          <text x="30" y="37" text-anchor="middle" class="brand-mark-text">อศน.</text>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">เบเกอรี่ อศน.</span>
+        <span class="brand-slogan">หอมกรุ่นทุกเช้า อบใหม่ทุกวัน</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="เปิดเมนู" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="#top">หน้าแรก</a>
+      <a href="#menu">เมนูสินค้า</a>
+      <a href="#promotion">โปรโมชั่น</a>
+      <a href="#reviews">รีวิวลูกค้า</a>
+      <a href="#contact">ติดต่อเรา</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">ร้านเบเกอรี่โฮมเมด · อบสดใหม่ทุกวัน</p>
+      <h1>เบเกอรี่ อศน.<br><span>ความอร่อยที่อบด้วยใจ</span></h1>
+      <p class="hero-text">ขนมปัง เค้ก และเบเกอรี่โฮมเมด สูตรต้นตำรับ อบใหม่จากเตาทุกเช้า ส่งตรงถึงมือคุณด้วยความหอมกรุ่นและรอยยิ้ม</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">สั่งซื้อเลย</a>
+        <a href="#promotion" class="btn btn-ghost">ดูโปรโมชั่น</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 380" width="100%" height="100%">
+        <ellipse cx="210" cy="345" rx="170" ry="22" fill="var(--cocoa)" opacity="0.12"/>
+        <!-- croissant -->
+        <g transform="translate(70,60) rotate(-8)">
+          <path d="M10 70 C 10 20, 90 -10, 140 20 C 170 40, 170 80, 140 100 C 110 120, 60 120, 30 100 C 10 88, 5 80, 10 70 Z" fill="var(--honey)" stroke="var(--cocoa)" stroke-width="3"/>
+          <path d="M30 40 Q 60 55 40 80" fill="none" stroke="var(--cocoa)" stroke-width="2.5" opacity=".55"/>
+          <path d="M70 25 Q 100 45 80 75" fill="none" stroke="var(--cocoa)" stroke-width="2.5" opacity=".55"/>
+          <path d="M105 30 Q 130 50 115 78" fill="none" stroke="var(--cocoa)" stroke-width="2.5" opacity=".55"/>
+        </g>
+        <!-- cupcake -->
+        <g transform="translate(230,150)">
+          <path d="M15 60 L35 130 L115 130 L135 60 Z" fill="var(--berry)" stroke="var(--cocoa)" stroke-width="3"/>
+          <path d="M10 60 C 10 20, 30 -5, 75 5 C 120 -5, 140 20, 140 60 C 100 75, 50 75, 10 60 Z" fill="var(--cream)" stroke="var(--cocoa)" stroke-width="3"/>
+          <circle cx="75" cy="0" r="9" fill="var(--berry)" stroke="var(--cocoa)" stroke-width="2.5"/>
+        </g>
+        <!-- cookie -->
+        <g transform="translate(40,230)">
+          <circle cx="45" cy="45" r="42" fill="var(--honey)" stroke="var(--cocoa)" stroke-width="3"/>
+          <circle cx="28" cy="32" r="5" fill="var(--cocoa)"/>
+          <circle cx="58" cy="26" r="4" fill="var(--cocoa)"/>
+          <circle cx="62" cy="55" r="5" fill="var(--cocoa)"/>
+          <circle cx="34" cy="60" r="4" fill="var(--cocoa)"/>
+          <circle cx="50" cy="45" r="3.5" fill="var(--cocoa)"/>
+        </g>
+        <!-- bread loaf -->
+        <g transform="translate(190,270)">
+          <path d="M0 60 C 0 20, 40 5, 80 10 C 120 5, 160 20, 160 60 C 160 75, 120 82, 80 82 C 40 82, 0 75, 0 60 Z" fill="var(--crust)" stroke="var(--cocoa)" stroke-width="3"/>
+          <path d="M30 20 Q 40 40 30 58" fill="none" stroke="var(--cocoa)" stroke-width="2" opacity=".5"/>
+          <path d="M60 14 Q 70 40 60 62" fill="none" stroke="var(--cocoa)" stroke-width="2" opacity=".5"/>
+          <path d="M92 14 Q 102 40 92 62" fill="none" stroke="var(--cocoa)" stroke-width="2" opacity=".5"/>
+          <path d="M124 20 Q 134 40 124 58" fill="none" stroke="var(--cocoa)" stroke-width="2" opacity=".5"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div class="scallop" aria-hidden="true"></div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about">
+  <div class="about-inner">
+    <h2 class="section-title"><span class="eyebrow">รู้จักเรา</span>เรื่องราวของเบเกอรี่ อศน.</h2>
+    <p>เบเกอรี่ อศน. เริ่มต้นจากความตั้งใจง่าย ๆ ของคนรักการอบขนม ที่อยากส่งต่อความอบอุ่นผ่านกลิ่นหอมของขนมปังสดใหม่ในทุกเช้า เราคัดสรรวัตถุดิบคุณภาพ เนย แป้ง และผลไม้ตามฤดูกาล มาผสมผสานกับสูตรที่พัฒนาอย่างพิถีพิถัน เพื่อให้ทุกคำที่คุณลิ้มลองเต็มไปด้วยความประณีตและความใส่ใจ ไม่ว่าจะเป็นครัวซองต์ชั้นกรอบ เค้กเนื้อนุ่ม หรือคุกกี้กรุบกรอบ ทุกชิ้นล้วนอบสดใหม่จากเตาในทุกวัน พร้อมส่งต่อความอร่อยและรอยยิ้มถึงมือคุณ ทั้งสำหรับมื้อเช้า ของว่างยามบ่าย หรือของฝากในโอกาสพิเศษ เบเกอรี่ อศน. ยินดีเป็นส่วนหนึ่งของความสุขในทุกวันของคุณ</p>
+  </div>
+</section>
+
+<!-- ===== MENU / PRODUCTS ===== -->
+<section class="menu" id="menu">
+  <div class="menu-inner">
+    <h2 class="section-title"><span class="eyebrow">เมนูขายดี</span>สินค้าแนะนำของร้าน</h2>
+
+    <div class="product-grid">
+
+      <article class="product-card">
+        <span class="badge">ขายดี</span>
+        <svg class="product-icon" viewBox="0 0 100 100" aria-hidden="true">
+          <path d="M8 55 C 8 15, 70 -5, 90 20 C 100 35, 95 60, 70 70 C 45 82, 20 78, 10 62 Z" fill="var(--honey)" stroke="var(--cocoa)" stroke-width="3"/>
+        </svg>
+        <h3>ครัวซองต์เนยสด</h3>
+        <p>อบใหม่ทุกเช้า ชั้นกรอบละเอียด หอมเนยแท้</p>
+        <span class="price">฿45</span>
+      </article>
+
+      <article class="product-card">
+        <svg class="product-icon" viewBox="0 0 100 100" aria-hidden="true">
+          <path d="M10 55 C 10 20, 45 5, 80 12 C 118 5, 118 20, 115 55 C 115 68, 90 78, 60 78 C 30 78, 10 68, 10 55 Z" fill="var(--crust)" stroke="var(--cocoa)" stroke-width="3"/>
+        </svg>
+        <h3>ขนมปังโฮลวีท</h3>
+        <p>เนื้อแน่น ใยอาหารสูง ดีต่อสุขภาพ</p>
+        <span class="price">฿55</span>
+      </article>
+
+      <article class="product-card">
+        <svg class="product-icon" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="42" fill="var(--honey)" stroke="var(--cocoa)" stroke-width="3"/>
+          <circle cx="35" cy="38" r="5" fill="var(--cocoa)"/>
+          <circle cx="62" cy="32" r="4.5" fill="var(--cocoa)"/>
+          <circle cx="68" cy="58" r="5" fill="var(--cocoa)"/>
+          <circle cx="40" cy="65" r="4" fill="var(--cocoa)"/>
+        </svg>
+        <h3>คุกกี้ช็อกชิพ</h3>
+        <p>กรุบนอกนุ่มใน ใส่ช็อกโกแลตชิพเต็มคำ</p>
+        <span class="price">฿25</span>
+      </article>
+
+      <article class="product-card">
+        <span class="badge">แนะนำ</span>
+        <svg class="product-icon" viewBox="0 0 100 100" aria-hidden="true">
+          <path d="M12 45 L28 90 L72 90 L88 45 Z" fill="var(--berry)" stroke="var(--cocoa)" stroke-width="3"/>
+          <path d="M8 45 C 8 15, 30 0, 50 5 C 70 0, 92 15, 92 45 C 65 55, 35 55, 8 45 Z" fill="var(--cream)" stroke="var(--cocoa)" stroke-width="3"/>
+        </svg>
+        <h3>คัพเค้กวานิลลา</h3>
+        <p>เนื้อนุ่มฟู หน้าครีมชีสหวานละมุน</p>
+        <span class="price">฿35</span>
+      </article>
+
+      <article class="product-card">
+        <svg class="product-icon" viewBox="0 0 100 100" aria-hidden="true">
+          <path d="M50 8 L88 30 L88 74 L50 96 L12 74 L12 30 Z" fill="var(--cocoa)" opacity="0.85" stroke="var(--cocoa)" stroke-width="3"/>
+          <path d="M50 8 L88 30 L50 52 L12 30 Z" fill="var(--berry)" stroke="var(--cocoa)" stroke-width="2"/>
+        </svg>
+        <h3>เค้กช็อกโกแลต</h3>
+        <p>เนื้อเค้กเข้มข้น ราดซอสช็อกโกแลตเข้มข้น</p>
+        <span class="price">฿65</span>
+      </article>
+
+      <article class="product-card">
+        <svg class="product-icon" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="55" r="38" fill="var(--crust)" stroke="var(--cocoa)" stroke-width="3"/>
+          <circle cx="38" cy="45" r="8" fill="var(--berry)"/>
+          <circle cx="60" cy="42" r="7" fill="var(--honey)"/>
+          <circle cx="55" cy="65" r="6" fill="var(--berry)"/>
+          <circle cx="35" cy="65" r="5" fill="var(--honey)"/>
+        </svg>
+        <h3>ทาร์ตผลไม้รวม</h3>
+        <p>คัสตาร์ดเข้มข้น ท็อปด้วยผลไม้สดตามฤดูกาล</p>
+        <span class="price">฿50</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROMOTION ===== -->
+<section class="promotion" id="promotion">
+  <div class="promotion-inner">
+    <h2 class="section-title light"><span class="eyebrow">อย่าพลาด</span>โปรโมชั่นประจำเดือนนี้</h2>
+    <div class="table-wrap">
+      <table class="promo-table">
+        <thead>
+          <tr>
+            <th>รายการ</th>
+            <th>ราคาปกติ</th>
+            <th>ราคาโปรโมชั่น</th>
+            <th>ส่วนลด</th>
+            <th>ระยะเวลา</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ครัวซองต์เนยสด (ซื้อ 3 แถม 1)</td>
+            <td>180</td>
+            <td>135</td>
+            <td>25%</td>
+            <td>ทุกวันจันทร์</td>
+          </tr>
+          <tr>
+            <td>เซตเค้กวันเกิด + เทียน</td>
+            <td>450</td>
+            <td>390</td>
+            <td>13%</td>
+            <td>1–31 ส.ค.</td>
+          </tr>
+          <tr>
+            <td>คุกกี้กล่องของฝาก 12 ชิ้น</td>
+            <td>300</td>
+            <td>250</td>
+            <td>17%</td>
+            <td>ทุกวันศุกร์–อาทิตย์</td>
+          </tr>
+          <tr>
+            <td>ขนมปังโฮลวีท ซื้อ 2 แถม 1</td>
+            <td>165</td>
+            <td>110</td>
+            <td>33%</td>
+            <td>ทุกวันพุธ</td>
+          </tr>
+          <tr>
+            <td>สมาชิกใหม่ ลดทันที</td>
+            <td>-</td>
+            <td>-</td>
+            <td>10%</td>
+            <td>ออเดอร์แรกเท่านั้น</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="reviews" id="reviews">
+  <div class="reviews-inner">
+    <h2 class="section-title"><span class="eyebrow">เสียงจากลูกค้า</span>รีวิวจากคนที่รักเรา</h2>
+    <div class="review-grid">
+      <blockquote class="review-card">
+        <p>“ครัวซองต์ที่นี่กรอบและหอมเนยมาก อร่อยที่สุดในย่านนี้เลยค่ะ”</p>
+        — คุณนิดา
+      </blockquote>
+      <blockquote class="review-card">
+        <p>“สั่งเค้กวันเกิดให้ลูก หน้าเค้กสวยและรสชาติดีมาก จะกลับมาอุดหนุนอีกแน่นอน”</p>
+        — คุณสมชาย
+      </blockquote>
+      <blockquote class="review-card">
+        <p>“คุกกี้กล่องของฝากขายดีมากในออฟฟิศ ทุกคนถามหาว่าซื้อร้านไหน”</p>
+        — คุณพิมพ์ใจ
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <h2 class="section-title"><span class="eyebrow">ติดต่อเรา</span>สั่งซื้อหรือสอบถามเพิ่มเติม</h2>
+      <p>แจ้งความต้องการของคุณผ่านฟอร์มด้านล่าง ทีมงานของเราจะติดต่อกลับโดยเร็วที่สุด</p>
+      <ul class="contact-list">
+        <li>📍 123 ถนนสุขใจ ตำบลเบเกอรี่ อำเภอเมือง จังหวัดนครราชสีมา</li>
+        <li>📞 08x-xxx-xxxx</li>
+        <li>✉️ hello@aosonbakery.example</li>
+        <li>🕗 เปิดทุกวัน 07:00 – 19:00 น.</li>
+      </ul>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="field">
+        <label for="name">ชื่อ-นามสกุล</label>
+        <input type="text" id="name" name="name" placeholder="กรอกชื่อของคุณ" required>
+      </div>
+      <div class="field">
+        <label for="tel">เบอร์โทรศัพท์</label>
+        <input type="tel" id="tel" name="tel" placeholder="08x-xxx-xxxx" pattern="[0-9\-]{9,15}" required>
+      </div>
+      <div class="field">
+        <label for="email">อีเมล</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+      <div class="field">
+        <label for="topic">หัวข้อติดต่อ</label>
+        <select id="topic" name="topic" required>
+          <option value="" disabled selected>เลือกหัวข้อ</option>
+          <option value="order">สั่งซื้อสินค้า</option>
+          <option value="custom">สั่งทำเค้กพิเศษ</option>
+          <option value="wholesale">สั่งซื้อจำนวนมาก / ตัวแทนจำหน่าย</option>
+          <option value="other">อื่น ๆ</option>
+        </select>
+      </div>
+      <div class="field field-full">
+        <label for="message">ข้อความ</label>
+        <textarea id="message" name="message" rows="4" placeholder="บอกเราเกี่ยวกับสิ่งที่คุณต้องการ..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary field-full">ส่งข้อความ</button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-name">เบเกอรี่ อศน.</span>
+      <p>หอมกรุ่นทุกเช้า อบใหม่ทุกวัน</p>
+    </div>
+    <div class="footer-col">
+      <h4>ติดต่อ</h4>
+      <p>123 ถนนสุขใจ ต.เบเกอรี่ อ.เมือง จ.นครราชสีมา</p>
+      <p>โทร. 08x-xxx-xxxx</p>
+      <p>hello@aosonbakery.example</p>
+    </div>
+    <div class="footer-col">
+      <h4>เวลาทำการ</h4>
+      <p>เปิดทุกวัน</p>
+      <p>07:00 – 19:00 น.</p>
+    </div>
+    <div class="footer-col">
+      <h4>ติดตามเรา</h4>
+      <p>Facebook: เบเกอรี่ อศน.</p>
+      <p>Instagram: @aoson.bakery</p>
+      <p>Line: @aosonbakery</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2569 เบเกอรี่ อศน. สงวนลิขสิทธิ์ | จัดทำเพื่อการศึกษา รายวิชาการพัฒนาเว็บไซต์ทางธุรกิจ</p>
+  </div>
+</footer>
+
+<script>
+  // mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const siteNav = document.getElementById('siteNav');
+  navToggle.addEventListener('click', () => {
+    const open = siteNav.classList.toggle('open');
+    navToggle.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  siteNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    siteNav.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', false);
+  }));
+
+  // contact form (demo only, no backend)
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!form.checkValidity()) {
+      status.textContent = 'กรุณากรอกข้อมูลให้ครบถ้วนและถูกต้อง';
+      status.classList.remove('success');
+      status.classList.add('error');
+      return;
+    }
+    status.textContent = 'ขอบคุณค่ะ เราได้รับข้อความของคุณแล้ว ทีมงานจะติดต่อกลับโดยเร็วที่สุด';
+    status.classList.remove('error');
+    status.classList.add('success');
+    form.reset();
+  });
+</script>
+
+</body>
+</html>
